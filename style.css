@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Varela&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    --sz: 10px;
+	--c1: #0a0a0a;
+	--c2: #000;
+	--ts: 50% / calc(var(--sz) * 18) calc(var(--sz) * 18);
+	--draw: var(--c1) 0 calc(var(--sz) * 5.85),
+		var(--c2) calc(calc(var(--sz) * 5.85) + 1px) calc(var(--sz) * 9.5),
+	#fff0 calc(calc(var(--sz) * 9.5) + 1px) 100%;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow: hidden;
+	background: radial-gradient(circle at 100% 100%, var(--draw)) var(--ts),
+	    radial-gradient(circle at 0% 100%, var(--draw)) var(--ts),
+	    radial-gradient(circle at 50% 50%, var(--draw)) var(--ts), var(--c1);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 8.5rem;
+    border-radius: 100%;
+    margin-top: 1rem;
+    border: 6px solid #000;
+}
+
+.titulo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f5f5f4;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.descricao {
+    font-size: 1rem;
+    color: #f5f5f4;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 1.2rem;
+    max-width: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    background-color: #2e2e2e;
+    color: #1a1a1a;
+    padding: 12px 24px;
+    width: 20rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px #000;
+    cursor: pointer;
+}
+
+.text-link {
+    font-size: 1rem;
+    text-align: center;
+    color: #f5f5f4;
+    font-weight: 500;
+}
+
+span {
+    color: #000;
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.8rem;
+    background-color: #2e2e2e;
+    padding: 12px;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.dev {
+    font-size: 0.8rem;
+    color: #40ff79;
+}
+
+iframe {
+    margin-top: 6px;
+}
+
+@media (min-width: 768px) {
+    img {
+        margin-top: 1rem;
+    }
+
+    .titulo {
+        margin-top: 8px;
+    }
+
+    footer {
+        position: fixed;
+        right: 1rem;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    button {
+        width: 25rem;
+        height: 4rem;
+    }
+
+    button:hover {
+        border: 2px solid #40ff79;
+        background-color: #1e1e1e;
+        box-shadow: 0 4px 8px #000;
+        transition: all 0.3s ease;
+    }
+}
