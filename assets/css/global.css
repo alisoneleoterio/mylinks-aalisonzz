@@ -118,7 +118,7 @@ footer p {
 
 .dev {
     font-size: 0.8rem;
-    color: #40ff79;
+    color: #adff2f;
 }
 
 iframe {
@@ -149,9 +149,15 @@ iframe {
     }
 
     button:hover {
-        border: 2px solid #40ff79;
-        background-color: #1e1e1e;
+        background-color: #1a3d2e;
         box-shadow: 0 4px 8px #000;
         transition: all 0.3s ease;
+    }
+
+    .share-btn {
+        position: absolute;
+        height: 3.5rem;
+        right: 1.5rem;
+        top: 0.5rem;
     }
 }

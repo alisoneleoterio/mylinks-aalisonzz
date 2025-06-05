@@ -7,12 +7,14 @@
     <meta name="author" content="Alison Eleotério">
     <meta name="keywords" content="MyLinks, Alison Eleotério, links, redes sociais, Artes visuais, Artista">
     <title>MyLinks - Alison Eleotério</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/share.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body class="background-image">
 
     <main class="container">
+        
         <img src="./img/profile-photo.png" alt="Foto de perfil">   
 
         <div class="titulos">
@@ -44,6 +46,48 @@
             </button>
         </div>
 
+        <!-- Botão de Compartilhar -->
+        <button id="shareBtn" class="share-btn">
+            <i class="bi bi-share-fill"></i>
+        </button>
+
+        <!-- Modal de Compartilhamento -->
+        <div id="shareModal" class="modal">
+            <div class="modal-content">
+                <p style="font-weight: 600;">Compartilhar MyLinks</p>
+                <span class="close" id="closeModal">&times;</span>
+                <div class="profile-card">
+                    <img src="./img/profile-photo.png" alt="Foto de perfil" class="modal-profile-img">
+                    <div class="profile-info">
+                        <p class="modal-username">Alison Eleotério</p>
+                        <p class="modal-link">@aalisonzz</p>
+                    </div>
+                </div>
+                <div class="share-icons">
+                    <button class="icon-btn" onclick="copyLink()">
+                        <i class="bi bi-link-45deg"></i>
+                    </button>
+                    <a class="icon-btn" href="https://x.com/intent/tweet?url=https://mylinks-eleodev.vercel.app" target="_blank">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a class="icon-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://mylinks-eleodev.vercel.app" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a class="icon-btn" href="https://wa.me/?text=https://mylinks-eleodev.vercel.app" target="_blank">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a class="icon-btn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://mylinks-eleodev.vercel.app" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <p>Junte-se a aalisonzz no MyLinks<br>
+                    O link na bio do momento!</p>
+                    <a href="https://mylinks-eleodev.vercel.app" class="modal-btn" target="_blank">Garanta o seu também</a>
+                </div>
+            </div>
+        </div>
+
         <footer>
             <p>Desenvolvido por 
                 <a href="https://mylinks-eleodev.vercel.app" class="dev" rel="noopener noreferrer" target="_blank">Alison Eleotério</a> 
@@ -51,5 +95,7 @@
             </p>
         </footer>
     </main>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
